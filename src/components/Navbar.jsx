@@ -18,8 +18,8 @@ const Container = styled.div`
   /*  */
   /* Border Styles */
   /*  */
-  border: solid;
-  border-color: red;
+  /* border: solid;
+  border-color: red; */
   /* 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -42,8 +42,8 @@ const Container = styled.div`
 //
 //
 const LogoContainer = styled.div`
-  font-family: "Playpen Sans", cursive;
-  font-size: 26px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
   margin: 10px;
   padding-bottom: 5px;
 `;
@@ -67,17 +67,25 @@ const Navbar = () => {
     <Container>
       <LogoContainer>READ by Jovany</LogoContainer>
       <MenuContainer>
-        <Dropdown as={ButtonGroup}>
-          <Button>
+        <Dropdown as={ButtonGroup} className="dropdownButton">
+          <Button className="dropdownButton">
             <Menu />
           </Button>
-          <Dropdown.Toggle />
+          <Dropdown.Toggle
+            className="dropdownButton"
+            id="dropdownToggle"
+            style={{ backgroundColor: "rgb(60, 60, 60)" }}
+          />
           <Dropdown.Menu>
-            <Dropdown.Item>
-              <Link to="/why">Why?</Link>
+            <Dropdown.Item className="dropdownItem">
+              <Link to="/why" className="dropdownLink">
+                Why?
+              </Link>
             </Dropdown.Item>
-            <Dropdown.Item>
-              <Link to="/">Home</Link>
+            <Dropdown.Item className="dropdownItem">
+              <Link to="/" className="dropdownLink">
+                Home
+              </Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
-  border: solid;
+  display: flex;
+  justify-content: center;
 `;
 
 const Home = () => {
