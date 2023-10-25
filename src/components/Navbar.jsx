@@ -68,7 +68,10 @@ const Navbar = () => {
       <LogoContainer>READ by Jovany</LogoContainer>
       <MenuContainer>
         <Dropdown as={ButtonGroup} className="dropdownButton">
-          <Button className="dropdownButton">
+          <Button
+            className="dropdownButton"
+            style={{ backgroundColor: "rgb(60, 60, 60)" }}
+          >
             <Menu />
           </Button>
           <Dropdown.Toggle
