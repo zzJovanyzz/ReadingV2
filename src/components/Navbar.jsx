@@ -1,6 +1,10 @@
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Menu } from "@mui/icons-material";
 import React from "react";
+import Dropdown from "react-bootstrap/Dropdown";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 //
 //
 // Container is the parent div (flex-container)
@@ -14,7 +18,9 @@ const Container = styled.div`
   /*  */
   /* Border Styles */
   /*  */
-  /* border-bottom: solid;
+  border: solid;
+  border-color: red;
+  /* 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-width: 2px; */
@@ -27,7 +33,7 @@ const Container = styled.div`
   /*  */
   /*  */
   margin: 0px;
-  height: 30px;
+  height: 60px;
   width: 100%;
 `;
 //
@@ -39,6 +45,7 @@ const LogoContainer = styled.div`
   font-family: "Playpen Sans", cursive;
   font-size: 26px;
   margin: 10px;
+  padding-bottom: 5px;
 `;
 //
 //
@@ -60,7 +67,20 @@ const Navbar = () => {
     <Container>
       <LogoContainer>READ by Jovany</LogoContainer>
       <MenuContainer>
-        <Menu style={{ fontSize: "40px" }} />
+        <Dropdown as={ButtonGroup}>
+          <Button>
+            <Menu />
+          </Button>
+          <Dropdown.Toggle />
+          <Dropdown.Menu>
+            <Dropdown.Item>
+              <Link to="/why">Why?</Link>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <Link to="/">Home</Link>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </MenuContainer>
     </Container>
   );
