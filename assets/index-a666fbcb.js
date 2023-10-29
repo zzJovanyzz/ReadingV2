@@ -115,7 +115,7 @@ Error generating stack: `+i.message+`
 `,RE=()=>I.jsx(OE,{children:I.jsx(Rl,{to:"/why",children:"Why?"})}),_E=Gn.div`
   display: flex;
   justify-content: center;
-`,TE=()=>I.jsx(_E,{children:I.jsx(Rl,{to:"/",children:"HomePage"})}),NE=()=>I.jsx(I.Fragment,{children:I.jsxs(j1,{children:[I.jsx(Ja,{exact:!0,path:"/",element:I.jsx(RE,{})}),I.jsx(Ja,{path:"/why",element:I.jsx(TE,{})})]})}),AE=Gn.div`
+`,TE=()=>I.jsx(_E,{children:I.jsx(Rl,{to:"/",children:"HomePage"})}),NE=()=>I.jsx(I.Fragment,{children:I.jsxs(j1,{children:[I.jsx(Ja,{exact:!0,path:"/readingV2",element:I.jsx(RE,{})}),I.jsx(Ja,{path:"/why",element:I.jsx(TE,{})})]})}),AE=Gn.div`
   display: flex;
   flex-direction: column;
 `;function jE(){return I.jsx(I.Fragment,{children:I.jsxs(AE,{children:[I.jsx(PE,{}),I.jsx(NE,{})]})})}oa.createRoot(document.getElementById("root")).render(I.jsx(Ke.StrictMode,{children:I.jsx(D1,{children:I.jsx(jE,{})})}));
