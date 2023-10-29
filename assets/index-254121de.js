@@ -109,7 +109,7 @@ Error generating stack: `+i.message+`
   padding-bottom: 5px;
 `,$E=Gn.div`
   margin: 10px;
-`,PE=()=>I.jsxs(CE,{children:[I.jsx(EE,{children:"READ by Jovany"}),I.jsx($E,{children:I.jsxs(oo,{as:ex,className:"dropdownButton",children:[I.jsx(l0,{className:"dropdownButton",style:{backgroundColor:"rgb(60, 60, 60)"},children:I.jsx(kE,{})}),I.jsx(oo.Toggle,{className:"dropdownButton",id:"dropdownToggle",style:{backgroundColor:"rgb(60, 60, 60)"}}),I.jsxs(oo.Menu,{children:[I.jsx(oo.Item,{className:"dropdownItem",children:I.jsx(Rl,{to:"/why",className:"dropdownLink",children:"Why?"})}),I.jsx(oo.Item,{className:"dropdownItem",children:I.jsx(Rl,{to:"/",className:"dropdownLink",children:"Home"})})]})]})})]}),OE=Gn.div`
+`,PE=()=>I.jsxs(CE,{children:[I.jsx(EE,{children:"READ by Jovany"}),I.jsx($E,{children:I.jsxs(oo,{as:ex,className:"dropdownButton",children:[I.jsx(l0,{className:"dropdownButton",style:{backgroundColor:"black"},children:I.jsx(kE,{})}),I.jsx(oo.Toggle,{className:"dropdownButton",id:"dropdownToggle",style:{backgroundColor:"black"}}),I.jsxs(oo.Menu,{children:[I.jsx(oo.Item,{className:"dropdownItem",children:I.jsx(Rl,{to:"/why",className:"dropdownLink",children:"Why?"})}),I.jsx(oo.Item,{className:"dropdownItem",children:I.jsx(Rl,{to:"/",className:"dropdownLink",children:"Home"})})]})]})})]}),OE=Gn.div`
   display: flex;
   justify-content: center;
 `,RE=()=>I.jsx(OE,{children:I.jsx(Rl,{to:"/why",children:"Why?"})}),_E=Gn.div`
